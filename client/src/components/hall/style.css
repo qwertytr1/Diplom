@@ -1,0 +1,34 @@
+.halls-page {
+	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+
+  .hall-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+
+  .hall-card {
+	background: #f0f5ff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	transition: box-shadow 0.2s ease;
+  }
+
+  .hall-card:hover {
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .hall-card h2 {
+	margin: 0 0 8px;
+	font-size: 22px;
+	color: #2f54eb;
+  }
+
+  .hall-card p {
+	margin: 4px 0;
+	color: #555;
+  }

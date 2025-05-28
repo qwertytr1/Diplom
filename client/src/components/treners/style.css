@@ -1,0 +1,107 @@
+/* Основной контейнер */
+.trainers-page {
+	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+
+  /* Заголовок страницы */
+  .page-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 32px;
+	text-align: center;
+	color: #222;
+  }
+
+  /* Список тренеров */
+  .trainer-list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+  }
+
+  /* Карточка тренера */
+  .trainer-card {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background: #fffbe6;
+	padding: 16px 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	text-decoration: none;
+	color: inherit;
+  }
+
+  .trainer-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Фото тренера */
+  .trainer-photo {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #fadb14;
+  }
+
+  /* Информация о тренере */
+  .trainer-info h2,
+  .trainer-info h3 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+  }
+
+  .trainer-info p {
+	margin: 4px 0 0;
+	color: #555;
+  }
+
+  /* Страница тренера */
+  .trainer-profile {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 24px;
+	text-align: center;
+  }
+
+  .trainer-profile .trainer-photo {
+	width: 160px;
+	height: 160px;
+	margin-bottom: 16px;
+  }
+
+  .trainer-name {
+	font-size: 28px;
+	margin-bottom: 8px;
+	color: #222;
+  }
+
+  .trainer-specialty {
+	font-size: 18px;
+	color: #777;
+	margin-bottom: 16px;
+  }
+
+  /* Адаптивность */
+  @media (max-width: 768px) {
+	.trainer-card {
+	  flex-direction: column;
+	  text-align: center;
+	}
+
+	.trainer-photo {
+	  width: 80px;
+	  height: 80px;
+	}
+
+	.trainer-info h2,
+	.trainer-info h3 {
+	  font-size: 18px;
+	}
+  }
